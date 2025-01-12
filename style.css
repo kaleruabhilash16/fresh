@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -91,7 +91,120 @@ header {
 }
 nav{
     width: 100%;
-    height:100px;
+    height: 70px;
     background-color: #0aad0a;
+}
 
+.home{
+    width: 80%;
+    margin: 30px auto;
+}
+.home .layer1{
+    width: 100%;
+    background-color: #f0f3f2;
+    height: 144px;
+    border-radius: 4px;
+    display: flex;
+    
+}
+
+.layer1 img{
+    padding-left: 20px;
+}
+.text h1{
+    margin:40px 0 0 0 ;
+}
+.text p{
+    margin: 0;
+    padding: 0;
+}
+.layer1 button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001e2b;
+    font-size: 15px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin:40px 0 0 400px ;
+    cursor: pointer;
+
+}
+.layer2 {
+    display: flex; /* Align columns horizontally */
+    justify-content: space-between; /* Add equal spacing between columns */
+    width: 100%;
+    height: 254px;
+    margin: 30px auto; /* Center container vertically and horizontally */
+}
+
+.cot1, .cot2, .cot3 {
+    width: 448px; /* Fixed width for all columns */
+    height: 254px; /* Fixed height for all columns */
+    position: relative;
+}
+
+.cot1 img, .cot2 img, .cot3 img {
+    width: 100%; /* Stretch image to fit container width */
+    height: 100%; /* Stretch image to fit container height */
+    object-fit: cover; /* Ensure image maintains aspect ratio and covers container */
+    border-radius: 4px; /* Optional: Rounded corners for images */
+}
+
+.promo-text {
+    width: 60%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    z-index: 2; /* Ensure text is above the image */
+}
+
+.mini1, .mini2 {
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.mini1 {
+    top: 100px; /* Position under promo-text */
+    left: 20px;
+    margin: 0;
+}
+
+.mini2 {
+    top: 130px; /* Position below mini1 */
+    left: 20px;
+    margin: 0;
+}
+
+.cot1 ,.cot2{
+    margin-right: 20px; /* Optional spacing between columns */
+}
+.promo-button {
+    position: absolute;
+    top: 170px; /* Position below the promo code */
+    left: 20px;
+    background-color: #001e2b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 2;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+.promo-button:hover {
+    background-color: #26404b; /* Darker shade on hover */
+}
+span{
+    font-weight: bold;
+}
+.text span{
+    color: #0aad0a;
 }
