@@ -16,8 +16,7 @@ header {
 }
 
 .logo {
-    margin-right: 20px;
-    flex: 1;
+    margin-right: 10px;
 }
 
 .logo img {
@@ -26,7 +25,6 @@ header {
 }
 
 .cate-search-box {
-    flex: 4;
     display: flex;
     align-items: center;
     border: 1px solid #ccc; 
@@ -71,8 +69,8 @@ header {
 }
 
 .location {
-    flex: 2;
-   margin-left: 15px;
+   margin-left: 10px;
+   margin-right: 110px;
 }
 .location span{
     padding-left: 10px;
@@ -90,6 +88,15 @@ header {
 .location button:hover {
     background-color: #5c6c75;
     color: #4caf50; 
+}
+.three-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.three-icons i{
+  cursor: pointer;
+  font-size: 20px;
 }
 nav {
     width: 100%;
